@@ -41,17 +41,45 @@ public class HelloWorld {
 
         //ternery
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("a:");
-        int a = input.nextInt();
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("a:");
+//        int a = input.nextInt();
+//
+//        System.out.print("b:");
+//        int b = input.nextInt();
+//
+//        int max=0;
+//        max=(a>b)? a:b;
+//        System.out.println("Max value is:"+ max);
 
-        System.out.print("b:");
-        int b = input.nextInt();
+        //Nested
+//        int age =23;
+//        String gender= "female";
+//        if (age>=18){
+//            if(gender.equals("female")){
+//                System.out.println("you equals or over than 18");
+//            }else System.out.println("you are not female ");
+//        }else System.out.println("lower than 18");
+//         int a=20, b=10, c=32;
+//         int max=(a>b && b>c)? a:(b>c)? b:c;
+//         System.out.println("MAx is "+max);
 
-        int max=0;
-        max=(a>b)? a:b;
-        System.out.println("Max value is:"+ max);
-
+         Scanner input =new Scanner (System.in);
+         System.out.println("Please choose option 1-3:");
+         int size = input.nextInt();
+         switch (size){
+             case 1:
+                 System.out.println("Very small");
+                 break;
+             case 2:
+                 System.out.println("small");
+                 break;
+             case 3:
+                 System.out.println("Very big");
+                 break;
+             default:
+                 System.out.println("Invalid choice");
+         }
 
 
     }
